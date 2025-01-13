@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Foodie's Delight</title>
+    <title>Responsive Cart Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to Foodie's Delight</h1>
-            <p>Explore our delicious menu!</p>
-        </header>
-
-        <main>
-            <div class="menu-item">
-                <h2>Margherita Pizza</h2>
-                <p>A classic pizza topped with fresh tomatoes, mozzarella, and basil.</p>
-                <a href="#" class="details-link">Learn More</a>
+    <header>
+        <nav>
+            <div class="logo">ShopLogo</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="cart-icon">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart">
+            <h1>Shopping Cart</h1>
+            <div id="cart-list" class="cart-items"></div>
+            <div class="cart-totals">
+                <p>Subtotal: <span id="subtotal">₹0.00</span></p>
+                <p>Total: <span id="total">₹0.00</span></p>
+                <button id="checkout-btn">Check Out</button>
             </div>
-
-            <div class="menu-item">
-                <h2>Spaghetti Carbonara</h2>
-                <p>A creamy pasta dish made with eggs, cheese, pancetta, and pepper.</p>
-                <a href="#" class="details-link">Learn More</a>
-            </div>
-
-            <div class="menu-item">
-                <h2>Caesar Salad</h2>
-                <p>Crisp romaine lettuce, croutons, and parmesan cheese, tossed in Caesar dressing.</p>
-                <a href="#" class="details-link">Learn More</a>
-            </div>
-        </main>
-    </div>
-
-    <script src="./script.js"></script>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ShopLogo. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
