@@ -1,3 +1,3 @@
 console.log('====================================');
-console.log("Connected");
+console.log("Connected to Foodie's Delight!");
 console.log('====================================');
